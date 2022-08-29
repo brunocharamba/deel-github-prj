@@ -15,6 +15,12 @@ const SearchBar: React.FC<ISearchBarProps> = (props) => {
     if (!query || query.length < 1) return [];
 
     const response: Response = await fetch(`${baseUrl}characters?name=${query}`);
+
+    if (response.status !== 200) {
+      console.error("An error occurred.")
+      return [];
+    }
+
     const _characters: IBBResponse[] = await response.json();
 
     return _characters;
