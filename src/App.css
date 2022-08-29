@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #34495e;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content {
