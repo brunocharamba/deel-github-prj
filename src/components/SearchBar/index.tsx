@@ -56,7 +56,7 @@ const SearchBar: React.FC<ISearchBarProps> = (props) => {
         type="text"
         placeholder="type WALTER, or WHITE, or any Breaking Bad character name..."
         value={query}
-        onChange={(evt) => setQuery(evt.target.value.toLowerCase())}
+        onChange={(evt: React.ChangeEvent<HTMLInputElement>) => setQuery(evt.target.value.toLowerCase())}
       />
       <div>{renderChoices()}</div>
     </div>

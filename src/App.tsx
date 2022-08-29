@@ -13,7 +13,7 @@ const App: React.FC = () => {
           <div className="title">Breaking Bad</div>
           <sub className="subtitle">Character Database</sub>
         </div>
-        <SearchBar onSelectedCharacter={(character) => setSelectedCharacter(character)} />
+        <SearchBar onSelectedCharacter={(character: IBBResponse) => setSelectedCharacter(character)} />
         {selectedCharacter && (
           <div className="card">
             <h3 className="card-name">{selectedCharacter?.name}</h3>
