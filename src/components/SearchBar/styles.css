@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.search-input {
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+  width: 480px;
+  font-size: 16px;
+}
+
+.search-options {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  width: 480px;
+  display: flex;
+  flex: 1;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: start;
+  background-color: #fafafa;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0 0 0;
+  gap: 10px;
+  animation: fadeIn 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search-opt {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  white-space: nowrap;
+  width: 480px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+mark {
+  color: white;
+  background-color: gray;
+}
+
+.search-img {
+  width: 130px;
+  aspect-ratio: 1;
+}
