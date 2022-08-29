@@ -37,6 +37,7 @@ const SearchBar: React.FC<ISearchBarProps> = (props) => {
   const renderChoices = () => {
     if (!displayed || displayed.length < 1) return;
 
+    // For production, the dangerouslySetInnerHTML can be problematic, so using a third party library to handle/parse the string before injecting it is a good call.
     return (
       <ul className="search-options">
         {displayed.map((d) => (
